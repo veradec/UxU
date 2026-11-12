@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UxU</title>
     <style>
-      code {
+      * {
 	  font-family: 'Fira Code', 'JetBrains Mono', Consolas, Monaco, monospace;
-	  font-size: 1.1rem;
+      }
+      code span {
+	  font-size: 0.9rem;
 	  background: #c2c2c2;
-	  padding: 0;
+	  padding: 1px;
+      }
+      img{
+	  margin: 3px;
       }
       .text-footer {
 	  display: flex;
@@ -41,9 +46,9 @@
       <p>Yes! UxU is a File Hosting service, but not in it's traditional sense. There is no Upload Button.
 	You need to move to the cultured way of doing it -- using curl.</p>
       
-      <code>curl -X POST -F "file=@file.png"</code>
+      <code><span>curl -X POST -F "file=@file.png"</span></code>
       <p>and the reponse will be a link with your Filename (sanitized ofcourse)</p>
-      <code>https://uxu.veradec.xyz/{random_string}/file.png</code>
+      <code><span>https://uxu.veradec.xyz/{random_string}/file.png</span></code>
       <p>something of this sorts and you can share the link too!</p>
     </div>
       <hr>
@@ -56,7 +61,7 @@
 	<div class="img-footer">
 	  <img src="./assets/anythingbut.gif">
 	  <img src="./assets/cc0.png">
-	<img src="./assets/emacs2.gif">
+	  <img src="./assets/emacs2.gif">
 	</div>
       </div>
   </body>
