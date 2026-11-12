@@ -54,6 +54,8 @@ func main(){
 
 	files := http.FileServer(http.FS(os.DirFS("./files")))
 	
+	router.Static("/assets", "./assets")
+	
 	router.GET("/:random_string/:name", gin.WrapH(files))
 	
 	router.Run(":8080")
