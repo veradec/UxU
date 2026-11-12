@@ -19,6 +19,7 @@ Go to the project directory
 Install dependencies
 
 ```bash
+  go get git.veradec.xyz/UxU
   go install
 ```
 
